@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>H&M</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="find-store">
+        <a href="#"> Mağaza Bul </a>
+      </div>
+      <div class="logo">
+        <a href="/">
+          <img
+            src="{{ url_for('static', filename='img/logoo.jpg') }}"
+            alt="Logo"
+          />
+        </a>
+      </div>
+      <form method="GET" action="/search" class="search-box">
+        <input type="text" name="q" placeholder="Ürün ara..." />
+        <button>Ara</button>
+      </form>
+    </header>
+    <main>
+      <h2>{{ product.name }}</h2>
+      <div class="product">
+        <div>
+          <img src="{{ product.image }}" alt="{{ product.name }}" />
+        </div>
+        <div>
+          <h3>{{ product.name }}</h3>
+          <h4>Kategori : {{product.category}}</h4>
+          <h4>{{ product.price }} TL</h4>
+          {% if product.stock == 0 %}
+          <h5 style="color: red">Stokta yok!</h5>
+          {%else%}
+          <h5>Stokta {{product.stock}} adet kaldı!</h5>
+          {% endif %}
+
+          <span>Bedenler</span>
+          <div class="sizes">
+            {% for size in product.size.split(',') %}
+            <span class="size"
+              >{% if size == 'r' %} Regular {% elif size == 's' %} Small {% elif
+              size == 'm' %} Medium {% endif %}</span
+            >
+            {% endfor %}
+          </div>
+          <button>Sepete Ekle</button>
+          <hr />
+          <div>
+            <h3>Açıklama</h3>
+            <span> {{ product.description }} </span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

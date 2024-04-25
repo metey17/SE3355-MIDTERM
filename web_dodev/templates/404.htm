@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>H&M</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="find-store">
+        <a href="#"> Mağaza Bul </a>
+      </div>
+      <div class="logo">
+        <a href="/">
+          <img
+            src="{{ url_for('static', filename='img/logoo.jpg') }}"
+            alt="Logo"
+          />
+        </a>
+      </div>
+      <form method="GET" action="/search" class="search-box">
+        <input type="text" name="q" placeholder="Ürün ara..." />
+        <button>Ara</button>
+      </form>
+    </header>
+    <main>
+      <center>
+        <h2>404 - Böyle bir sayfa yok!</h2>
+      </center>
+    </main>
+  </body>
+</html>

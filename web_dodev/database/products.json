@@ -1,0 +1,292 @@
+[
+  {
+    "id": 1,
+    "name": "Diz Boyu Etek",
+    "category": "Yeni Kadın, Kadın",
+    "price": 619.99,
+    "stock": 5,
+    "image": "/img/products/kadin/diz_boyu_etek.jpeg",
+    "size": "r,s,m",
+    "description": "Diz boyu etekler, çeşitli üst kıyafetlerle kolayca kombinlenebilir. Tişörtlerden gömleklere, hırkalardan bluzlara kadar birçok seçenekle uyum sağlayabilirler. Ayakkabı seçimi ise genellikle tarzınıza ve eteğin kullanım amacına bağlı olarak değişir. Örneğin, spor bir görünüm elde etmek için spor ayakkabılar veya daha şık bir görünüm için topuklu ayakkabılar tercih edilebilir."
+  },
+  {
+    "id": 2,
+    "name": "Keten Karışımlı Blazer",
+    "category": "Yeni Kadın, Kadın",
+    "price": 829.99,
+    "stock": 10,
+    "image": "/img/products/kadin/keten_karisimli_blazer.jpeg",
+    "size": "r,s",
+    "description": "Keten karışımlı blazer, şıklık ve rahatlık arayan kadınlar için mükemmel bir seçenektir. Klasik bir tarzı modern detaylarla birleştirir."
+  },
+  {
+    "id": 3,
+    "name": "Low Denim Kargo Şort",
+    "category": "Yeni Kadın, Kadın",
+    "price": 509.99,
+    "stock": 2,
+    "image": "/img/products/kadin/low_Denim_kargo_sort.jpeg",
+    "size": "r,m",
+    "description": "Low denim kargo şort, yaz aylarında rahatlık ve şıklığı bir araya getiren ideal bir parçadır. Günlük kullanıma uygun."
+  },
+  {
+    "id": 4,
+    "name": "Pullu Elbise",
+    "category": "Yeni Kadın, Kadın",
+    "price": 509.99,
+    "stock": 8,
+    "image": "/img/products/kadin/pullu_elbise.jpeg",
+    "size": "r,s",
+    "description": "Pullu elbise, özel etkinliklerde dikkat çekmek isteyen kadınlar için harika bir seçenektir. Işıltılı detaylarla dolu."
+  },
+  {
+    "id": 5,
+    "name": "Takım Yeleği",
+    "category": "Kadın",
+    "price": 899.99,
+    "stock": 12,
+    "image": "/img/products/kadin/takim_yelegi.jpeg",
+    "size": "s,m",
+    "description": "Takım yeleği, iş kıyafetlerine şıklık katmak isteyen kadınlar için mükemmel bir seçenektir. Hem profesyonel hem de şık bir görünüm sunar."
+  },
+  {
+    "id": 6,
+    "name": "Tek Düğmeli Blazer",
+    "category": "Yeni Kadın, Kadın",
+    "price": 1029.99,
+    "stock": 3,
+    "image": "/img/products/kadin/tek_dugmeli_blazer.jpeg",
+    "size": "s,m",
+    "description": "Tek düğmeli blazer, hem iş hem de günlük kıyafetlerle mükemmel uyum sağlayan çok yönlü bir parçadır. Şıklık ve rahatlık arayanlar için ideal."
+  },
+  {
+    "id": 7,
+    "name": "Utility Etek",
+    "category": "Kadın",
+    "price": 520.99,
+    "stock": 0,
+    "image": "/img/products/kadin/utility_etek.jpeg",
+    "size": "s",
+    "description": "Utility etek, modern ve şık bir görünüm elde etmek isteyen kadınlar için tasarlanmıştır. Kombinlemesi kolay ve rahat bir parçadır."
+  },
+  {
+    "id": 8,
+    "name": "Volan Kollu Elbise",
+    "category": "Yeni Kadın, Kadın",
+    "price": 520.99,
+    "stock": 15,
+    "image": "/img/products/kadin/volan_kollu_elbise.jpeg",
+    "size": "s,m",
+    "description": "Volan kollu elbise, feminen detaylarla dolu romantik bir görünüm sunar. Özel günlerde veya davetlerde şıklık arayanlar için idealdir."
+  },
+  {
+    "id": 9,
+    "name": "Loose Fit Paraşüt Pantolon",
+    "category": "Yeni Erkek, Erkek",
+    "price": 525.99,
+    "stock": 3,
+    "image": "/img/products/erkek/lf_parasut_pantolon.jpeg",
+    "size": "s,m,r",
+    "description": "Loose fit paraşüt pantolon, rahatlık ve tarzı bir araya getiren modern erkekler için ideal bir seçenektir. Günlük giyimde veya şehirde gezerken rahatlıkla tercih edilebilir."
+  },
+  {
+    "id": 10,
+    "name": "Regular Fit Delis Desenli Triko Gömlek",
+    "category": "Yeni Erkek, Erkek",
+    "price": 699.99,
+    "stock": 8,
+    "image": "/img/products/erkek/regula_fit_delis_desenli_triko_gomlek.jpeg",
+    "size": "r",
+    "description": "Regular fit delis desenli triko gömlek, şıklığı ve rahatlığı bir araya getirir. Hem günlük kullanıma hem de özel günlerde giyilmek üzere tasarlanmıştır."
+  },
+  {
+    "id": 11,
+    "name": "Regular Fit Polo Tshirt",
+    "category": "Yeni Erkek, Erkek",
+    "price": 499.99,
+    "stock": 15,
+    "image": "/img/products/erkek/rg_polo_tshirt.jpeg",
+    "size": "r",
+    "description": "Regular fit polo t-shirt, klasik ve şık bir görünüm sunar. Günlük giyimde rahatlıkla tercih edilebilir ve çeşitli kombinlerle uyum sağlar."
+  },
+  {
+    "id": 12,
+    "name": "2 Parça Pamuklu Set",
+    "category": "Yeni Bebek, Bebek",
+    "price": 529.99,
+    "stock": 3,
+    "image": "/img/products/bebek/2_parca_pamuklu_set.jpeg",
+    "size": "r",
+    "description": "2 parça pamuklu set, bebeğinizin rahat etmesi için mükemmel bir seçenektir. Günlük giyim veya özel günlerde kullanılabilir."
+  },
+  {
+    "id": 13,
+    "name": "2 Parça Hediye Seti",
+    "category": "Bebek",
+    "price": 799.99,
+    "stock": 13,
+    "image": "/img/products/bebek/2_parcali_hediye_seti.jpeg",
+    "size": "r",
+    "description": "2 parça hediye seti, bebeklere özel ve sevimli bir hediye seçeneğidir. Bebek giyiminde şıklık ve konforu bir araya getirir."
+  },
+  {
+    "id": 14,
+    "name": "2li Havlu Çorap",
+    "category": "Bebek",
+    "price": 299.99,
+    "stock": 8,
+    "image": "/img/products/bebek/2li_havlu_corap.jpeg",
+    "size": "r",
+    "description": "2'li havlu çoraplar, bebeğinizin ayaklarını sıcak tutmanın yanı sıra şık görünmesini sağlar. Günlük kullanıma uygun ve pratik bir seçenektir."
+  },
+  {
+    "id": 15,
+    "name": "2li Pamuklu Tshirt",
+    "category": "Bebek",
+    "price": 619.99,
+    "stock": 8,
+    "image": "/img/products/bebek/2li_pamuklu_tshirt.jpeg",
+    "size": "r",
+    "description": "2'li pamuklu t-shirtler, bebeğinizin rahat etmesi için idealdir. Pamuklu kumaşıyla yumuşak ve hassas bebek cildine uygun."
+  },
+  {
+    "id": 16,
+    "name": "4 Parça Delik Desenli Jarse Hediye Seti",
+    "category": "Yeni Bebek, Bebek",
+    "price": 1219.99,
+    "stock": 12,
+    "image": "/img/products/bebek/4_parca_delik_desenli_jarse_hediye_seti.jpeg",
+    "size": "r",
+    "description": "4 parça delik desenli jarse hediye seti, bebek giyiminde şıklığı ve konforu bir araya getirir. Bebeğiniz için özel bir hediye seçeneği."
+  },
+  {
+    "id": 17,
+    "name": "Güneş Şapkası",
+    "category": "Bebek",
+    "price": 119.99,
+    "stock": 12,
+    "image": "/img/products/bebek/gunes_sapkasi.jpeg",
+    "size": "r",
+    "description": "Güneş şapkası, bebeğinizin hassas cildini güneşin zararlı etkilerinden korurken şık ve sevimli bir görünüm sunar. Güneşli günlerde kullanım için ideal."
+  },
+  {
+    "id": 18,
+    "name": "Triko Hırka",
+    "category": "Yeni Bebek, Bebek",
+    "price": 379.99,
+    "stock": 2,
+    "image": "/img/products/bebek/triko_hirka.jpeg",
+    "size": "r",
+    "description": "Triko hırka, bebeğinizin üşümesini önlerken şık bir görünüm kazandırır. Yumuşak ve konforlu triko kumaşıyla bebeğinizin rahat etmesini sağlar."
+  },
+  {
+    "id": 19,
+    "name": "Baskılı Tshirt",
+    "category": "Yeni Çocuk, Çocuk",
+    "price": 399.99,
+    "stock": 3,
+    "image": "/img/products/cocuk/baskili_tshirt.jpeg",
+    "size": "r,s",
+    "description": "Baskılı t-shirt, çocuğunuzun tarzını yansıtırken rahatlığını da sağlar. Canlı ve eğlenceli baskılarıyla çocuğunuzun favori giysilerinden biri olacak."
+  },
+  {
+    "id": 20,
+    "name": "Çiçek Desenli Babet",
+    "category": "Çocuk",
+    "price": 529.99,
+    "stock": 13,
+    "image": "/img/products/cocuk/cicek_desenli_babet.jpeg",
+    "size": "r",
+    "description": "Çiçek desenli babetler, kız çocukların zarif ve şık görünmesini sağlar. Rahat ve hafif tasarımıyla günlük kullanıma uygundur."
+  },
+  {
+    "id": 21,
+    "name": "Güneş Gözlüğü",
+    "category": "Yeni Çocuk, Çocuk",
+    "price": 239.99,
+    "stock": 11,
+    "image": "/img/products/cocuk/gunes_gozlugu.jpeg",
+    "size": "r",
+    "description": "Güneş gözlüğü, çocuğunuzun gözlerini güneşin zararlı ışınlarından korurken stil sahibi bir görünüm kazandırır. Güneşli günlerde kullanım için ideal."
+  },
+  {
+    "id": 22,
+    "name": "Hayvan Motifli Tshirt",
+    "category": "Çocuk",
+    "price": 359.99,
+    "stock": 3,
+    "image": "/img/products/cocuk/hayvan_motifli_tshirt.jpeg",
+    "size": "r",
+    "description": "Hayvan motifli t-shirt, çocuğunuzun sevimli ve eğlenceli tarafını yansıtırken rahat ve şık bir görünüm sunar. Günlük giyimde tercih edebilirsiniz."
+  },
+  {
+    "id": 23,
+    "name": "Keten Karışımlı Şort",
+    "category": "Yeni Çocuk, Çocuk",
+    "price": 529.99,
+    "stock": 7,
+    "image": "/img/products/cocuk/keten_karisimli_sort.jpeg",
+    "size": "r",
+    "description": "Keten karışımlı şort, çocuğunuzun yaz aylarında rahat etmesini sağlarken şık bir görünüm sunar. Hafif ve nefes alabilir kumaşıyla ideal bir seçenektir."
+  },
+  {
+    "id": 24,
+    "name": "Çift Katlı Koşu Şortu",
+    "category": "Yeni Spor, Spor",
+    "price": 889.99,
+    "stock": 7,
+    "image": "/img/products/spor/cift_katli_kosu_sortu.jpeg",
+    "size": "r",
+    "description": "Çift katlı koşu şortu, spor yaparken rahatlığı ve performansı bir araya getirir. Nefes alabilir kumaşı terlemeyi önlerken rahat hareket etmenizi sağlar."
+  },
+  {
+    "id": 25,
+    "name": "Diz üstü Spor Çorabı",
+    "category": "Spor",
+    "price": 229.99,
+    "stock": 17,
+    "image": "/img/products/spor/diz_ustu_spor_corabi.jpeg",
+    "size": "r",
+    "description": "Diz üstü spor çorabı, spor yaparken ayaklarınızı destekler ve rahat tutar. Ter emici özelliğiyle ayaklarınızın kuru kalmasını sağlar."
+  },
+  {
+    "id": 26,
+    "name": "Drymove Spor Üstü",
+    "category": "Spor",
+    "price": 729.99,
+    "stock": 19,
+    "image": "/img/products/spor/drymove_spor_ustu.jpeg",
+    "size": "r",
+    "description": "Drymove spor üstü, ter emici özelliğiyle spor sırasında vücudunuzu kuru tutar ve rahat bir antrenman deneyimi sunar. Esnek kumaşı hareket özgürlüğü sağlar."
+  },
+  {
+    "id": 27,
+    "name": "Koşu Şortu",
+    "category": "Yeni Spor, Spor",
+    "price": 789.99,
+    "stock": 24,
+    "image": "/img/products/spor/kosu_sortu.jpeg",
+    "size": "r",
+    "description": "Koşu şortu, hafif ve esnek yapısıyla koşu antrenmanlarınızda maksimum performans ve rahatlık sağlar. Terlemeyi önleyen kumaşıyla uzun süreli kullanıma uygun."
+  },
+  {
+    "id": 28,
+    "name": "Spor Güneş Gözlüğü",
+    "category": "Spor",
+    "price": 989.99,
+    "stock": 39,
+    "image": "/img/products/spor/spor_gunes_gozlugu.jpeg",
+    "size": "r",
+    "description": "Spor güneş gözlüğü, spor yaparken gözlerinizi güneşin zararlı ışınlarından korur ve net bir görüş sağlar. Dayanıklı ve hafif yapısıyla uzun süreli kullanıma uygun."
+  },
+  {
+    "id": 29,
+    "name": "Yürüyüş Pantolonu",
+    "category": "Spor",
+    "price": 1289.99,
+    "stock": 21,
+    "image": "/img/products/spor/yuruyus_pantolonu.jpeg",
+    "size": "r",
+    "description": "Yürüyüş pantolonu, yürüyüş ve doğa sporları için idealdir. Esnek yapısıyla hareket özgürlüğü sağlar ve rahat bir yürüyüş deneyimi sunar."
+  }
+]

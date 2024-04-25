@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>H&M</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="find-store">
+        <a href="#"> Mağaza Bul </a>
+      </div>
+      <div class="logo">
+        <a href="/">
+          <img
+            src="{{ url_for('static', filename='img/logop.jpg') }}"
+            alt="Logo"
+          />
+        </a>
+      </div>
+      <form method="GET" action="/search" class="search-box">
+        <input type="text" name="q" placeholder="Ürün ara..." />
+        <button>Ara</button>
+      </form>
+    </header>
+    <main>
+      <h2>"{{param.q}}" için sonuçlar</h2>
+      <div id="search_new">
+        <form id="new_search" method="GET" action="/search">
+          <label for="p">Fiyat : </label>
+          <select name="p" id="p">
+            <option value="0" {% if param.p == "0" %} selected {% endif %} >Artan</option>
+            <option value="1" {% if param.p == "1" %} selected {% endif %}>Azalan</option>
+          </select>
+          <select name="s" id="s">
+            <option value="">Hepsi</option>
+            <option value="r" {% if param.s == "r" %} selected {% endif %} >Regular</option>
+            <option value="s" {% if param.s == "s" %} selected {% endif %}>Small</option>
+            <option value="m" {% if param.s == "m" %} selected {% endif %}>Medium</option>
+          </select>
+          <input type="hidden" name="q" value="{% if param.q != None %}{{param.q}}{% endif %}" />
+        </form>
+      </div>
+      <div class="page">
+        <div>
+          <ul>
+            <li><a href="/search?q={% if param.q != None %}{{param.q}}{% endif %}&s={% if param.s != None %}{{param.s}}{% endif %}&p={% if param.p != None %}{{param.p}}{% endif %}">Hepsi</a></li>
+            {% for category in products.category %}
+            <li><a href="/search?c={{category}}&q={% if param.q != None %}{{param.q}}{% endif %}&s={% if param.s != None %}{{param.s}}{% endif %}&p={% if param.p != None %}{{param.p}}{% endif %}">{{category}} [{{products.category_quantity[category]}}]</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div>
+          {% for product in products.result %}
+          <div class="item">
+            <a href="/detail/{{product.id}}">
+              <img src="{{ product.image }}" alt="{{ product.name }}" />
+              {{ product.name }}<br />
+              {{ product.price }} TL
+            </a>
+            <img src="/img/like.svg" />
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </main>
+    <script>
+      document.getElementById("p").addEventListener("change", function () {
+        document.getElementById("new_search").submit();
+      });
+
+      document.getElementById("s").addEventListener("change", function () {
+        document.getElementById("new_search").submit();
+      });
+    </script>
+  </body>
+</html>

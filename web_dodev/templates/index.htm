@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>H&M</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="find-store">
+        <a href="#"> Mağaza Bul </a>
+      </div>
+      <div class="logo">
+        <a href="/">
+          <img
+            src="{{ url_for('static', filename='img/logoo.jpg') }}"
+            alt="Logo"
+          />
+        </a>
+      </div>
+      <form method="GET" action="/search" class="search-box">
+        <input type="text" name="q" placeholder="Ürün ara..." />
+        <button>Ara</button>
+      </form>
+    </header>
+    <nav>
+      <div class="navigation">
+        <ul id="news-ul">
+          <li>
+            <a
+              id="kadin"
+              href="#kadin"
+              class="selected"
+              onclick="get_news(this,'Yeni Kadın, Kadın')"
+              >Kadın</a
+            >
+          </li>
+          <li>
+            <a href="#erkek" onclick="get_news(this,'Yeni Erkek, Erkek')"
+              >Erkek</a
+            >
+          </li>
+          <li>
+            <a href="#bebek" onclick="get_news(this,'Yeni Bebek, Bebek')"
+              >Bebek</a
+            >
+          </li>
+          <li>
+            <a href="#cocuk" onclick="get_news(this,'Yeni Çocuk, Çocuk')"
+              >Çocuk</a
+            >
+          </li>
+          <li>
+            <a href="#spor" onclick="get_news(this,'Yeni Spor, Spor')">Spor</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <section class="new-products">
+        <h2>Yeni Ürünler</h2>
+        <div class="slider-container">
+          <div class="slider" id="our_slide"></div>
+        </div>
+        <button id="prevBtn"><--</button>
+        <button id="nextBtn">--></button>
+      </section>
+    </main>
+    <script>
+      function slider_init() {
+        const slider = document.querySelector(".slider");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+
+        let counter = 0;
+        const slideWidth = slider.querySelector(".slide").clientWidth * 4;
+
+        nextBtn.addEventListener("click", () => {
+          if (counter < 12) {
+            counter++;
+            slider.style.transform = `translateX(${-slideWidth * counter}px)`;
+          }
+        });
+
+        prevBtn.addEventListener("click", () => {
+          if (counter > 0) {
+            counter--;
+            slider.style.transform = `translateX(${-slideWidth * counter}px)`;
+          }
+        });
+      }
+
+      function get_news(elem, category) {
+        var news_menu = document.getElementById("news-ul");
+        try {
+          news_menu
+            .getElementsByClassName("selected")[0]
+            .classList.remove("selected");
+        } catch (Err) {}
+
+        elem.classList.add("selected");
+
+        const url = `/api/search?c=${category}`;
+        fetch(url)
+          .then((response) => {
+            return response.json();
+          })
+          .then((data) => {
+            data = data["result"];
+            var slidePanel = document.getElementById("our_slide");
+            slidePanel.innerHTML = "";
+            for (let i = 0; i < data.length; i++) {
+              slidePanel.innerHTML = `${slidePanel.innerHTML}
+                <div class="slide">
+                    <a href="/detail/${data[i]["id"]}">
+              <img src="${data[i]["image"]}" alt="${data[i]["name"]}" />
+              <span>
+                ${data[i]["name"]} <br />
+                ${data[i]["price"]} TL
+              </span>
+              </a>
+            </div>`;
+            }
+            slider_init();
+          })
+          .catch((error) => {
+            console.error("Veri çekilirken hata oluştu:", error);
+          });
+      }
+
+      get_news(document.getElementById("kadin"), "Yeni, Kadın");
+    </script>
+  </body>
+</html>
